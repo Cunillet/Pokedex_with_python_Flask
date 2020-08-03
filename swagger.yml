@@ -1,0 +1,49 @@
+swagger: "2.0"
+info:
+  description: defines the API for pokedex done with python and flask + sqlite
+  version: "1.0.0"
+  title: Swagger Rest Article
+consumes:
+  - application/json
+produces:
+  - application/json
+
+basePath: /api
+
+# Paths supported by the server application
+paths:
+  /pokemon:
+    get:
+      operationId: pokemon.read_all
+      tags:
+        - Pokemon
+      summary: Read the entire set of pokemons, sorted by id
+      description: Read the entire set of pokemons, sorted by id
+      responses:
+        200:
+          description: Successfully read pokemons set operation
+          schema:
+            type: array
+            items:
+              properties:
+                pokemon_id:
+                  type: integer
+                  description: Id of the pokemon
+                name:
+                  type: string
+                  description: name of the pokemon
+                description:
+                  type: string
+                  description: description of pokemon habits
+                ptype:
+                  type: string
+                  description: type of pokemon
+                weight:
+                  type: integer
+                  description: weight of the pokemon
+                height:
+                  type: integer
+                  description: height of the pokemon
+                sound:
+                  type: string
+                  description: sound produced by pokemon
