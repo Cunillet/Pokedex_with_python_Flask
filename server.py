@@ -14,7 +14,7 @@ import signal
 conn_app = config.conn_app
 
 # configure API endpoints with swagger file
-#conn_app.add_api('swagger.yml')
+conn_app.add_api('swagger.yml')
 
 # creathe the base URL route
 @conn_app.route('/')

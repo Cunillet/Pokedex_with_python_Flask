@@ -17,6 +17,6 @@ def read_all():
 	pokemons = Pokemon.query.order_by(Pokemon.pokemon_id).all()
 
 	# serialize the data from the response
-	pokemon_schema = PokemonSchema(many=True)
-
-	return pokemon_schema.dumb(pokemons).data
+	pokemons_schema = PokemonSchema(many=True)
+	data = pokemons_schema.dump(pokemons)
+	return data

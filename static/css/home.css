@@ -1,0 +1,50 @@
+/**
+ * base stylesheet to support home page
+**/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+body {
+	font-family: Roboto;
+}
+
+.container {
+	padding: 10px;
+}
+
+.banner {
+	text-align: center;
+}
+
+.pokemons {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #EEF;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table caption {
+	height: 2em;
+	font-weight: bold;
+	padding-top: 0.2em;
+	border-bottom: none;
+	font-size: larger;
+}
+
+table tr {
+	height: 2em;
+}
+
+tr:nth-child(even) {
+	background: lightcyan;
+}
+
+table td {
+	text-align: center;
+}
+

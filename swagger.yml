@@ -32,9 +32,6 @@ paths:
                 name:
                   type: string
                   description: name of the pokemon
-                description:
-                  type: string
-                  description: description of pokemon habits
                 ptype:
                   type: string
                   description: type of pokemon
@@ -44,6 +41,3 @@ paths:
                 height:
                   type: integer
                   description: height of the pokemon
-                sound:
-                  type: string
-                  description: sound produced by pokemon
